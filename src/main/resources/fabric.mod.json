@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "hii-doctor4t",
+	"version": "${version}",
+	"name": "Hii doctor4t",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hii-doctor4t/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.firmamentsspark.HiiDoctor4t"
+		],
+		"client": [
+			"net.firmamentsspark.HiiDoctor4tClient"
+		],
+		"fabric-datagen": [
+			"net.firmamentsspark.HiiDoctor4tDataGenerator"
+		]
+	},
+	"mixins": [
+		"hii-doctor4t.mixins.json",
+		{
+			"config": "hii-doctor4t.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"accessWidener": "hii-doctor4t.accesswidener"
+}
