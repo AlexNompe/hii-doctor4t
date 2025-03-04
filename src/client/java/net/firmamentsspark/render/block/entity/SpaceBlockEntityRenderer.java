@@ -68,6 +68,7 @@ public class SpaceBlockEntityRenderer implements BlockEntityRenderer<SpaceBlockE
 
         setSampler(TEST_SHADER_PROGRAM,0,Identifier.of(HiiDoctor4t.MOD_ID,"textures/spacemap/test.png"));
         setSampler(TEST_SHADER_PROGRAM,1,Identifier.of(HiiDoctor4t.MOD_ID,"textures/spacemap/earth_day.png"));
+        setSampler(TEST_SHADER_PROGRAM,2,Identifier.of(HiiDoctor4t.MOD_ID,"textures/spacemap/sun.png"));
 
         VertexConsumer buffer = vertexConsumers.getBuffer(TEST_LAYER);
         this.renderSides(matrix4f, buffer, light, overlay);
